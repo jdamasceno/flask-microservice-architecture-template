@@ -45,6 +45,7 @@ jobs:
   deploy-to-stage:
     name: Deploy in stage
     runs-on: ubuntu-latest    
+    needs: build
     environment:
       name: "stage"
     steps:
