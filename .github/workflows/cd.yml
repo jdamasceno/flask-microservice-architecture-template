@@ -8,8 +8,10 @@ on:
       version:
         description: 'Version'
         required: true
-
-        
+      environment:
+          description: 'Environment to run tests against'
+          type: environment
+          required: true
 jobs:
 
   deploy-to-prod:
